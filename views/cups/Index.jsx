@@ -9,7 +9,7 @@ class Index extends React.Component {
     return (
       <Default title=''>
         <p>The different type of cups. Please select the color.</p> 
-        <img src='https://coffeeaffection.com/wp-content/uploads/2019/10/types-of-coffee-cups-02.png'/>
+        <img src='https://coffeeaffection.com/wp-content/uploads/2019/10/types-of-coffee-cups-02.png' class="center"/>
         <div class="flex-container">
               {
                         cups.map((cup) => {

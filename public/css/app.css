@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: ghostwhite;
+  color: rgb(210, 210, 251);
 }
 
 input[type=text] {
@@ -55,6 +55,18 @@ img {
   height: 300px;
 }
 
+.center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 footer {
   position: relative;
   left: 0;
@@ -64,7 +76,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgb(237, 71, 71);
+  background-color: rgb(226, 128, 128);
   color: black;
   text-align: center;
   padding: 7px;

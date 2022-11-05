@@ -7,7 +7,7 @@ class Show extends React.Component {
     const capName = name[0].toUpperCase() + name.substring(1)
     return (
       <Default title={''} cup={this.props.cup}>
-      <img src={Image}/>
+      <img src={Image} class= "left"/>
         <p>{capName} that is {color} </p>
         <form method='POST' action={`/cups/${_id}?_method=DELETE`}>
           <input type='submit' value={`Delete ${color} ${name}`} />
