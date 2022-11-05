@@ -8,24 +8,22 @@ class Index extends React.Component {
     const { cups } = this.props
     return (
       <Default title=''>
+        <p>The different type of cups. Please select the color.</p> 
+        <img src='https://coffeeaffection.com/wp-content/uploads/2019/10/types-of-coffee-cups-02.png'/>
         <div class="flex-container">
               {
                         cups.map((cup) => {
                           const { name, color, _id, image } = cup
                           return (
                             <div key={_id}>
-                              <a href={`/cups/${_id}`}>
-                                {name}
-                              </a> is {color}
+                              <a href={`/cups/${_id}`}> {color}
+                              </a> 
                               <br />
-                              <form method='POST' action={`/cups/${_id}?_method=DELETE`}>
-                                <input type='submit' value={`Delete ${color} ${name}`} />
-                              </form>
                             </div>
                           )
                         })
-                    }
-              </div>     
+                    } 
+              </div>    
       </Default>
     )
   }
