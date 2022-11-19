@@ -1,4 +1,5 @@
 const React = require('react')
+const Footer = require('../footer/Footer.jsx')
 
 class Default extends React.Component {
   render () {
@@ -28,6 +29,7 @@ class Default extends React.Component {
             {title}
           </h1>
           {this.props.children}
+          <Footer/>
         </body>
       </html>
     )

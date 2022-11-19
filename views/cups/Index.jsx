@@ -13,11 +13,13 @@ class Index extends React.Component {
         <div class="flex-container">
               {
                         cups.map((cup) => {
-                          const { name, color, _id, image } = cup
+                          const { name, color, _id, Image } = cup
                           return (
                             <div key={_id}>
-                              <a href={`/cups/${_id}`}> {color}
+                              <a href={`/cups/${_id}`}>
+                                <img src={Image}/>
                               </a> 
+                              <p>{name}</p>
                               <br />
                             </div>
                           )
